@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with Images</title>
+  </head>
+  <body>
+    <img src="cat.jpg" alt="A cute Cat" class="image-align" />
+
+    <!-- Aligning the Image -->
+    <img src="cat.jpg" alt="A cute Cat" class="image-align-left" />
+
+    <!-- Size of the image   -->
+    <p>
+      <img
+        src="cat.jpg"
+        alt="A cute Cat"
+        width="200"
+        height="200"
+        class="image-align"
+      />
+      This Some Text Around the Image
+    </p>
+    <!-- Styling the Image using CSS -->
+    <style>
+      .image-align {
+        margin: 10px;
+        float: left;
+      }
+    </style>
+
+    <!-- Image Links -->
+    <a href="https://www.google.com">
+      <img src="cat.jpg" alt="A cute Cat" class="image-align" />
+    </a>
+    <!-- Responsive Images   -->
+    <img src="cat.jpg" alt="Description" style="max-width: 100%;">
+
+    <!-- How to Load Images from External Sources -->
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Universityofnairobi2.jpg"
+      alt="https://www.uonbi.ac.ke/"
+      style="width: 2500px; height: 2500px"
+    />
+    <!-- Lazy loading    -->
+    <img src="cat.jpg" alt="A cute Cat" loading="lazy" class="image-align" />
+    <!-- Image Captioning -->
+    <figure>
+      <img src="cat.jpg" alt="A cute Cat" class="image-align" />
+      <figcaption>This is a cute cat</figcaption>
+    </figure>
+    <!-- Retina and High-DPI Displays -->
+    <img src="cat.jpg" alt="A cute Cat" srcset="image.jpg 1px, image@2x.jpg 2x" />
+  </body>
+</html>
